@@ -1,0 +1,50 @@
+@font-face {
+    font-family: Myriad;
+    src: url(../font/MYRIADPRO-LIGHT_0.OTF);
+    font-weight: lighter;
+  }
+
+@font-face {
+    font-family: Hpdns;
+    src: url(../font/HP\ DNS\ Gibsons\ One\ Semi\ Bold.otf);
+    font-weight: bold;
+}
+
+.bg-intro
+{
+    background-image: url("../images/BG-01.png");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    background-color: #9B4E23;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+    position: absolute;
+    z-index: 99;
+}
+
+.title-intro{
+    font-family: Hpdns;
+    color: #D4CDC4;
+    font-size: 200px;
+    margin-bottom: -50px;
+}
+.text-intro{
+    font-family: Myriad;
+    color: white;
+}
+.content-intro{
+   text-align: center;
+   height: 70%;
+}
+
+.center{
+    margin: auto;
+}
+.progress-bar{
+    background-color: #222223 !important;
+}

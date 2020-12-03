@@ -1,0 +1,85 @@
+@font-face {
+    font-family: Hpdns;
+    src: url(../font/HP\ DNS\ Gibsons\ One\ Semi\ Bold.otf);
+    font-weight: bold;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.bg
+{
+    background-color: #9B4E23;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 260%;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.content {
+    position: relative;
+    top: 130px;
+    width: 100%;
+}
+
+.bg-title{
+    width: 100%; 
+    height: 200px;
+    margin: 0 !important; 
+    background-image: url("../images/background_d.jpg");
+}
+
+.title{
+    font-family: Hpdns;
+    font-size: 70px;
+    color: #D4CDC4;
+}
+
+.category{
+    border: 1px solid white;
+    width: 75%;
+    height: 250px;
+    padding: 20px;
+    
+}
+
+.list-category{
+    line-height:250%;
+    color: white;
+}
+
+.best-seller{
+    width: 75%;
+    padding: 20px;
+    text-align: center;
+}
+
+.list-info{
+    line-height:140%;
+    color: white;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.product{
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+    float: left;
+}
+
+.btn{
+    background-color: #CFB899 !important;
+    color: #9B4E23 !important;
+    font-weight: 630 !important;
+    margin-top: 10px;
+}
+
+.shopping{
+    margin: auto !important;
+}

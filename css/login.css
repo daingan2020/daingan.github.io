@@ -1,0 +1,123 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.bg
+{
+    background-color: #9B4E23;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    position: absolute;
+}
+
+.bg-1
+{       
+    background-image: url('../images/BG-01.png');
+    background-color: #9B4E23;
+    background-repeat: repeat;
+    background-size: 250%;  
+    height: 100%; 
+    position: absolute;
+}
+
+.cover{
+    height: 100%; 
+    width: 100%;
+    margin: auto !important;
+}
+
+.main{
+    position: relative;
+    height: 100%;
+}
+
+.header{
+    z-index: 4;
+}
+
+.mid{
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.content {
+    position: relative;
+    top: 130px;
+    width: 100%;
+
+}
+
+.form{
+    background-color: #E9DED1;
+    width: 330px;
+    height: auto;
+    transition: 0.3s;
+}
+.line{
+    margin: auto;
+    width: 100%;
+}
+
+.slide-bg{
+    width: 22%;
+}
+
+.mytab{
+    width: 50%;
+    text-align: center;
+    color: #716F6E !important;
+    background-color: none !important;
+    transition: 0.2s;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.nav-link.active {
+    color: #716F6E !important;
+    background-color: #E9DED1 !important;
+    border-bottom: 2px solid #AA7658 !important;
+}
+
+.form1{
+    width: 100%;
+    margin: auto !important;
+}
+
+.forgot-pass{
+    text-align: right;
+    width: 53%;
+    border-bottom: 1px solid #716F6E;
+}
+
+.txt{
+    background-color: #E9DED1 !important;
+    border-bottom: 2px solid #716F6E !important;
+    border-top: none !important;
+    border-right: none !important;
+    border-left: none !important;
+    border-radius: 0 !important;
+}
+.btn-login{
+    background-color: #9B4E23!important;
+    color: white !important;
+    /* width: 100px;  */
+}
+.btn-f{
+    background-color: #3B62A3 !important;
+    color: white !important;
+    width: 100px;
+}
+
+.btn-g{
+    background-color: #D54D45 !important;
+    color: white !important;
+    width: 100px;
+}
+
+label{
+    margin-bottom: 0 !important;
+}

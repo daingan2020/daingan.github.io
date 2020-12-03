@@ -1,0 +1,108 @@
+@font-face {
+    font-family: Hpdns;
+    src: url(../font/HP\ DNS\ Gibsons\ One\ Semi\ Bold.otf);
+    font-weight: bold;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.bg
+{
+    background-color: #9B4E23;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 110%;
+    background-attachment: fixed;
+    position: absolute;
+}
+
+.bg-1
+{       
+    background-image: url('../images/BG-01.png');
+    background-color: #9B4E23;
+    background-repeat: repeat;
+    background-size: 200%;  
+    height: 110%; 
+    position: absolute;
+}
+
+.content {
+    position: relative;
+    top: 130px;
+    width: 100%;
+}
+
+.cover{
+    height: 100%; 
+    width: 100%;
+    margin: auto !important;
+}
+
+.main{
+    position: relative;
+    height: 150%;
+}
+
+.header{
+    z-index: 4;
+}
+
+.mid{
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.bg-title{
+    width: 100%; 
+    margin: 0 !important; 
+}
+
+.title{
+    font-family: Hpdns;
+    font-size: 65px;
+    color: #D4CDC4;
+}
+.name{
+    font-size: 25px;
+    color: #D4CDC4;
+    font-weight: 600;
+}
+
+.description{
+    color: #D4CDC4;
+    font-size: 23px;
+}
+
+.size{
+    font-size: 18px;
+    color: #D4CDC4;
+    font-weight: 600;
+}
+
+.btn{
+    background-color: #CFB899 !important;
+    color: #9B4E23 !important;
+    font-weight: 630 !important;
+    margin-top: 10px;
+    width: 20%;
+}
+
+.quality{
+    font-size: 28px;
+    color: #D4CDC4;
+    font-weight: 600;
+}
+
+.order{
+    width: auto !important;
+    font-size: 25px !important;
+}
+
+.title1{
+    color: #D4CDC4;
+}

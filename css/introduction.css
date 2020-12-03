@@ -1,0 +1,92 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.bg
+{
+    background-color: #9B4E23;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 170%;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.content {
+    position: relative;
+    top: 130px;
+    width: 100%;
+}
+.gen-intro{
+    text-align: center;
+}
+.title {
+    color: white;
+}
+
+.infor{
+    background-color: #000000;
+    width: 100%;
+    height: 300px;
+    margin-left: 0px !important;
+}
+
+.logo2{
+    width: 350px;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vl {
+    border-right: 2px solid #984D23;
+    height: 160px;
+    padding: 20px;
+  }
+.center3 {
+    text-align: left;
+    padding: 50px;
+}
+.center3 > p{
+    color: #ACA69F;
+}
+
+.avt{
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;;
+}
+
+.avatar{
+    float: left;
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar > .member{
+    display: inline-block;
+    padding: 20px;
+}
+
+.member > p{
+    color: #D4CDC4;
+}
+
+.member > p:first-child{
+    font-size: 30px;
+}
+
+.bg2{
+    background-color: #A35E36;
+    width: 85%;
+    height: 35%;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
