@@ -1,0 +1,129 @@
+@font-face {
+    font-family: myraidB;
+    src: url(../font/MYRIADPRO-BOLD.OTF);
+    /* font-weight: bold; */
+}
+
+@font-face {
+    font-family: Hpdns;
+    src: url(../font/HP\ DNS\ Gibsons\ One\ Semi\ Bold.otf);
+    font-weight: bold;
+}
+
+
+.section {
+    text-align: center;
+}
+
+
+.index{
+    font-size: 110px;
+    -webkit-text-stroke: 1px white; 
+    color: #9B4E23; 
+    font-family: myraidB;
+    margin-bottom: -10px;
+}
+
+.title{
+    font-family: myraidB;
+    color: #D4CDC4;
+}
+
+.block{
+    background-color: #262323;
+    height: 100%;
+}
+.source{
+    text-align: left;
+    margin-top: -15px;
+}
+.source > h1{
+    font-family: Hpdns;
+    color: #D4CDC4;
+    font-size: 70px;
+}
+
+.source > hr{
+    margin-top: auto;
+    margin-left: 0;
+    color: #D4CDC4;
+    background-color: #D4CDC4;
+    width: 20%;
+    height: 6px;
+}
+
+.source > p {
+    color: #D4CDC4;
+    line-height: 200%;
+}
+
+.img-source{
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-30%, -50%);
+}
+
+.myContent{
+    height: 400px;
+    background-image: url('../images/Ellipse\ 269.png');
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: -20% -100%;
+  }
+
+  /* .video{
+
+  } */
+
+  .video > span {
+    font-family: Hpdns;
+    color: #D4CDC4;
+    font-size: 70px;
+  }
+
+  .video > hr {
+    margin-bottom: auto;
+    margin-top: -15px;
+    color: #D4CDC4;
+    background-color: #D4CDC4;
+    width: 25%;
+    height: 6px;
+  }
+
+.source-page{
+    height: 100%;
+    background-image: url('../images/giaoan.lik-trong-dong.png');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 130% -1000%; 
+  }
+
+  #section2{
+    height: 100%;
+    background-image: url('../images/giaoan.lik-trong-dong.png');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 10% -1000%; 
+  }
+
+  #section3{
+    height: 100%;
+    background-image: url('../images/giaoan.lik-trong-dong.png');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 130% -1000%; 
+  }
+
+  .title-video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #D4CDC4;
+    font-size: 20px;
+  }
+
+  .other-video{
+    text-align: left;
+    color: #D4CDC4;
+  }
