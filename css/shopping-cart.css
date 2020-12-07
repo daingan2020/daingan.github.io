@@ -81,7 +81,7 @@ html, body {
 
 .pro-title{   
     font-size: 30px;
-    line-height: 0;
+    line-height: 0.2;
     font-weight: 300;
 }
 .pro-type{
@@ -98,7 +98,7 @@ html, body {
     background-color: #D4CDC4 !important;
     /* font-size: 17px !important; */
     font-weight: 700 !important;
-    width: 40px;
+    width: 30px;
 }
 
 .total {

@@ -5,7 +5,7 @@ html, body {
 }
 #main{
     position: relative;
-    height: 200%;
+    height: 100%;
 }
 .bg
 {
@@ -101,18 +101,59 @@ footer{
     z-index: 4;
 }
 
-.fes1{
+.content {
     position: relative;
     top: 130px;
     width: 100%;
 }
 
-.index > span {
-    font-size: 70px;
-}
-
-.under{
+.contain {
+    position: relative;
+    width: 20%;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
     position: absolute;
+    top: 0;
     bottom: 0;
+    left: 0;
     right: 0;
-}
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #262323;
+  }
+  
+  .contain:hover .overlay {
+    opacity: 0.9;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .btn{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    color: #9B4E23 !important;
+    font-weight: 630 !important;
+    margin-top: 10px;
+    font-size: 13px !important;
+    background-color: #CFB899 !important;
+  }

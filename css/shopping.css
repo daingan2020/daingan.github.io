@@ -63,7 +63,7 @@ html, body {
     color: white;
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 4px 0 0 0;
 }
 
 .product{
@@ -73,13 +73,30 @@ html, body {
     float: left;
 }
 
+.product > img {
+    border: 1px solid white;
+}
+
 .btn{
     background-color: #CFB899 !important;
     color: #9B4E23 !important;
     font-weight: 630 !important;
     margin-top: 10px;
+    font-size: 13px !important;
 }
 
 .shopping{
     margin: auto !important;
+}
+
+.page-link{
+    font-size: 20px !important;
+    color: #D4CDC4 !important;
+    background-color: unset !important;
+    font-weight: 500 !important;
+    border: unset !important;
+}
+
+.page-link.active {
+    border-bottom: 1px solid white !important;
 }

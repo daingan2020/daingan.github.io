@@ -49,6 +49,19 @@ html, body {
     color: white;
 }
 
+.fes{
+    color: white;
+    text-decoration: none;
+}
+.fes:hover{
+    text-decoration: none;
+    color: white;
+}
+
+.fes:visited{
+    text-decoration: none;
+    color: white;
+}
 .story{
     width: 90%;
     background-color: #262323;

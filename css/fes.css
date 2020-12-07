@@ -91,30 +91,6 @@
     height: 6px;
   }
 
-.source-page{
-    height: 100%;
-    background-image: url('../images/giaoan.lik-trong-dong.png');
-    background-repeat: no-repeat;
-    background-size: 50%;
-    background-position: 130% -1000%; 
-  }
-
-  #section2{
-    height: 100%;
-    background-image: url('../images/giaoan.lik-trong-dong.png');
-    background-repeat: no-repeat;
-    background-size: 50%;
-    background-position: 10% -1000%; 
-  }
-
-  #section3{
-    height: 100%;
-    background-image: url('../images/giaoan.lik-trong-dong.png');
-    background-repeat: no-repeat;
-    background-size: 50%;
-    background-position: 130% -1000%; 
-  }
-
   .title-video{
     display: flex;
     justify-content: center;

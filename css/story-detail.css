@@ -1,0 +1,49 @@
+@font-face {
+    font-family: Hpdns;
+    src: url(../font/HP\ DNS\ Gibsons\ One\ Semi\ Bold.otf);
+    font-weight: bold;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.bg
+{
+    background-color: #9B4E23;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 260%;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.content {
+    position: relative;
+    top: 130px;
+    width: 100%;
+}
+
+.title{
+    font-family: Hpdns;
+    font-size: 65px;
+    color: #D4CDC4;
+}
+
+
+.title-img{
+    color: #BA947B;
+    text-align: center;
+}
+
+.title-story{
+    color: #CFB899;
+}
+
+.paragraph{
+    color: #D4CDC4;
+    width: 80%;
+    line-height: 2;
+}
