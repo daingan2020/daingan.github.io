@@ -20,12 +20,6 @@ html, body {
     position: relative;
 }
 
-.content {
-    position: relative;
-    top: 130px;
-    width: 100%;
-}
-
 .bg-title{
     width: 100%; 
     height: 200px;

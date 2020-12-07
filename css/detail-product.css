@@ -15,7 +15,7 @@ html, body {
     background-repeat: no-repeat;
     background-size: 100%;
     width: 100%;
-    height: 110%;
+    height: auto;
     background-attachment: fixed;
     position: absolute;
 }
@@ -26,15 +26,10 @@ html, body {
     background-color: #9B4E23;
     background-repeat: repeat;
     background-size: 200%;  
-    height: 110%; 
+    height: auto; 
     position: absolute;
 }
 
-.content {
-    position: relative;
-    top: 130px;
-    width: 100%;
-}
 
 .cover{
     height: 100%; 

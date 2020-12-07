@@ -30,12 +30,6 @@ html, body {
     position: absolute;
 }
 
-.content {
-    position: relative;
-    top: 130px;
-    width: 100%;
-}
-
 .cover{
     height: 100%; 
     width: 100%;

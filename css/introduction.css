@@ -9,16 +9,11 @@ html, body {
     background-repeat: no-repeat;
     background-size: 100%;
     width: 100%;
-    height: 170%;
+    height: auto;
     background-attachment: fixed;
     position: relative;
 }
 
-.content {
-    position: relative;
-    top: 130px;
-    width: 100%;
-}
 .gen-intro{
     text-align: center;
 }

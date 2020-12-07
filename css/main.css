@@ -101,12 +101,6 @@ footer{
     z-index: 4;
 }
 
-.content {
-    position: relative;
-    top: 130px;
-    width: 100%;
-}
-
 .contain {
     position: relative;
     width: 20%;

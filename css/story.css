@@ -20,11 +20,6 @@ html, body {
     position: relative;
 }
 
-.content {
-    position: relative;
-    top: 130px;
-    width: 100%;
-}
 
 .title{
     font-family: Hpdns;
