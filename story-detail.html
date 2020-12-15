@@ -10,6 +10,7 @@
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="js/index.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <style>
         .menu>a {
             color: white;
@@ -29,46 +30,83 @@
 </head>
 <script>
     window.onscroll = function () { scrollFunction20(); };
+
+    $(document).ready(function () {
+
+
+        $('.header').on('click', '.search-toggle', function (e) {
+            var selector = $(this).data('selector');
+
+            $(selector).toggleClass('show').find('.search-input').focus();
+            $('.search-toggle1').toggleClass('active')
+            $(this).toggleClass('active');
+
+            e.preventDefault();
+        });
+
+
+        $('.header').on('click', '.search-toggle1', function (e) {
+            var selector = $(this).data('selector');
+
+            $(selector).toggleClass('show').find('.search-input').focus();
+            $('.search-toggle').toggleClass('active')
+            $(this).toggleClass('active');
+
+            e.preventDefault();
+        });
+    });
 </script>
 
 <body>
     <div class="bg">
-        <div id="nav" class="row header" style="position: fixed;width: 100%;height: 92px;">
-            <div id="logo" class="col-3 logo">
-                <a id="whitelink" href="index.html"><img id="white" src="images/logo.png" style="height: 40px;"
-                        class="img-fluid"></a>
-                <a id="blacklink" href="index.html" style="display: none;"><img id="black" src="images/logo-black.png"
-                        style="height: 40px;" class="img-fluid" style="display: none;"></a>
-            </div>
-            <div id="d1" class="menu">
-                <a id="t1" href="introduction.html">Giới thiệu</a>
-            </div>
-            <div id="d2" class="menu">
-                <a id="t2" href="about-fes.html">Về Lễ Hội</a>
-            </div>
-            <div id="d3" class="menu">
-                <a id="t3" href="story.html">Bài viết</a>
-            </div>
-            <div id="d4" class="menu" style="max-width: 20% !important;">
-                <a id="t4" href="shopping.html">Vật phẩm lưu niệm</a>
-            </div>
-            <div id="icon-white" class="col-3 icon">
-                <img src="images/find.png" style="width: 20px;height: 20px;" class="img-fluid" hspace="20px">
-                <a href="shopping-cart.html"><img src="images/giohang.png" style="width: 20px;height: 20px;"
-                        class="img-fluid" hspace="20px"></a>
-                <a href="login.html"><img src="images/info.png" style="width: 20px;height: 20px;" class="img-fluid"
+        <div id="header-1" class="header">
+            <div id="nav" class="row" style="width: 100%;height: 92px;margin: auto;">
+                <div id="logo" class="col-3 logo">
+                    <a id="whitelink" href="index.html"><img id="white" src="images/logo.png" style="height: 40px;"
+                            class="img-fluid"></a>
+                    <a id="blacklink" href="index.html" style="display: none;"><img id="black"
+                            src="images/logo-black.png" style="height: 40px;" class="img-fluid"
+                            style="display: none;"></a>
+                </div>
+                <div id="d1" class="menu">
+                    <a id="t1" href="introduction.html">Giới thiệu</a>
+                </div>
+                <div id="d2" class="menu">
+                    <a id="t2" href="about-fes.html">Về Lễ Hội</a>
+                </div>
+                <div id="d3" class="menu">
+                    <a id="t3" href="story.html">Bài viết</a>
+                </div>
+                <div id="d4" class="menu" style="max-width: 20% !important;">
+                    <a id="t4" href="shopping.html">Vật phẩm lưu niệm</a>
+                </div>
+                <div id="icon-white" class="col-3 icon">
+                    <div class="search-icon"><a class="search-toggle" data-selector="#header-1"></a></div>
+                    <a href="shopping-cart.html"><img src="images/giohang.png" style="width: 20px;height: 20px;"
+                            class="img-fluid" hspace="20px"></a>
+                    <a href="login.html"><img src="images/info.png" style="width: 20px;height: 20px;" class="img-fluid"
+                            hspace="20px"></a>
+                </div>
+                <div id="icon-black" class="col-3 icon" style="display: none;">
+                    <div class="search-icon"><a class="search-toggle1" data-selector="#header-1"></a></div>
+                    <img src="images/icon-shopping-cart-black.png" style="width: 20px;height: 20px;" class="img-fluid"
                         hspace="20px"></a>
+                    <a href="login.html"><img src="images/icon-user-black.png" style="width: 20px;height: 20px;"
+                            class="img-fluid" hspace="20px"></a>
+                </div>
             </div>
-            <div id="icon-black" class="col-3 icon" style="display: none;">
-                <img src="images/icon-search-black.png" style="width: 20px;height: 20px;" class="img-fluid"
-                    hspace="20px">
-                <a href="shopping-cart.html"><img src="images/icon-shopping-cart-black.png"
-                        style="width: 20px;height: 20px;" class="img-fluid" hspace="20px"></a>
-                <a href="login.html"><img src="images/icon-user-black.png" style="width: 20px;height: 20px;"
-                        class="img-fluid" hspace="20px"></a>
+
+            <div class="row" style="width: 100%;height: 20px;margin: auto;">
+                <div style="width: 80%">
+                </div>
+                <div style="width: 20%">
+                    <form action="" class="search-box">
+                        <input type="text" class="form-control form-control-sm search-input"
+                            placeholder="Tìm kiếm..." />
+                    </form>
+                </div>
             </div>
         </div>
-
         <footer>
             <div class="right-bottom">
                 <img src="images/line.png">
@@ -79,7 +117,7 @@
         </footer>
 
         <div class="content">
-                <div style="width: 100%; height: 150px;"></div>
+            <div style="width: 100%; height: 150px;"></div>
             <div style="width: 100%; margin: auto;text-align: center;">
                 <h1 class="title">Bài viết</h1>
             </div>

@@ -8,18 +8,11 @@ html, body {
     height: 100%;
 }
 .bg
-{
-    /* background-image: url("../images/background.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 100%;
-    height: 200%;
-    background-attachment: fixed; */
-        
+{       
     background-image: url('../images/BG-01.png');
     background-color: #9B4E23;
     background-repeat: no-repeat;
-    background-size: 160%;
+    background-size: 100%;
     height: 100%;
     position: absolute;
 }
@@ -46,6 +39,9 @@ html, body {
 
 .header {
     z-index: 4;
+    position: fixed;
+    margin: auto;
+    width: 100%;
 }
 .menu{
     padding-top: 10px;
@@ -63,22 +59,6 @@ html, body {
     align-items: center;
     /* max-width: 20% !important; */
 }
-
-/* .icon > i{
-    font-size: 20px;
-    color: white;
-    padding: 0px 20px;
-    transition: 0.3s;
-} */
-  
-/* .icon > i:hover{
-    font-size: 33px;
-} */
-
-/* .icon > img {
-    width: 20px;
-    height: 20px;
-} */
 
 .right-bottom > i{
     font-size: 25px;
@@ -100,10 +80,26 @@ footer{
     right: 0;
     z-index: 4;
 }
+.fes1{
+    position: absolute;
+    top: 130px;
+    width: 100%;
+    z-index: 10;
+}
+.index > span {
+    font-size: 70px;
+}
+
+.under{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
 
 .contain {
     position: relative;
-    width: 20%;
+    width: 85%;
+    cursor: pointer;
   }
   
   .image {
@@ -126,12 +122,12 @@ footer{
   }
   
   .contain:hover .overlay {
-    opacity: 0.9;
+    opacity: 0.8;
   }
   
   .text {
-    color: white;
-    font-size: 20px;
+    width: 20%;
+    height: auto;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -139,15 +135,73 @@ footer{
     text-align: center;
   }
 
-  .btn{
+  .search-toggle {
+    position: relative;
+    display: block;
+    height: 18px;
+    width: 18px;
+  }
+  .search-toggle::before, .search-toggle::after {
+    content: '';
     position: absolute;
-    top: 65%;
-    left: 50%;
+    display: block;
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+  }
+  .search-toggle::before {
+    border: 2px solid #E7DFD5;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    left: -2px;
+    top: -2px;
+  }
+  .search-toggle::after {
+    height: 2px;
+    width: 10px;
+    background: #E7DFD5;
+    top: 16px;
+    left: 12px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .search-toggle.active::before {
+    width: 0;
+    border-width: 1px;
+    border-radius: 0;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    top: 2px;
+    left: 8px;
+  }
+  .search-toggle.active::after {
+    width: 18px;
+    left: 0px;
+    top: 10px;
+  }
+
+  .search-icon{
+      width: 15%;
+  }
+
+  .search-input {
+    opacity: 0;
+  }
+
+  #header-1 .search-box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-height: 0;
+    transition: all 0.3s;
+    transform: translateY(-15%);
+  }
+
+  #header-1.show .search-box .search-input {
     opacity: 1;
-    transform: translate(-50%, -50%);
-    color: #9B4E23 !important;
-    font-weight: 630 !important;
-    margin-top: 10px;
-    font-size: 13px !important;
-    background-color: #CFB899 !important;
+  }
+
+  #header-1.show .search-box {
+    max-height: 40px;
+    padding:5px 0;
   }

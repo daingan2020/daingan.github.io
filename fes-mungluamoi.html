@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
     <style>
         .menu>a {
             color: white;
@@ -61,29 +64,55 @@
         }
     </style>
 </head>
+<script>
+    $(document).ready(function () {
+
+
+        $('.header').on('click', '.search-toggle', function (e) {
+            var selector = $(this).data('selector');
+
+            $(selector).toggleClass('show').find('.search-input').focus();
+            $(this).toggleClass('active');
+
+            e.preventDefault();
+        });
+    });
+</script>
 
 <body>
-    <div class="row header" style="position: fixed;width: 100%;height: 92px;">
-        <div class="col-3 logo">
-            <a href="index.html"><img src="images/logo.png" style="height: 40px;" class="img-fluid"></a>
+    <div id="header-1" class="header">
+        <div class="row" style="width: 100%;height: 92px;">
+            <div class="col-3 logo">
+                <a href="index.html"><img src="images/logo.png" style="height: 40px;" class="img-fluid"></a>
+            </div>
+            <div class="menu">
+                <a href="introduction.html">Giới thiệu</a>
+            </div>
+            <div class="menu">
+                <a href="about-fes.html">Về Lễ Hội</a>
+            </div>
+            <div class="menu">
+                <a href="story.html">Bài viết</a>
+            </div>
+            <div class="menu" style="max-width: 20% !important;">
+                <a href="shopping.html">Vật phẩm lưu niệm</a>
+            </div>
+            <div class="col-3 icon">
+                <div class="search-icon"><a class="search-toggle" data-selector="#header-1"></a></div>
+                <img src="images/giohang.png" style="width: 20px;height: 20px;" class="img-fluid" hspace="20px">
+                <a href="login.html"><img src="images/info.png" style="width: 20px;height: 20px;" class="img-fluid"
+                        hspace="20px"></a>
+            </div>
         </div>
-        <div class="menu">
-            <a href="introduction.html">Giới thiệu</a>
-        </div>
-        <div class="menu">
-            <a href="about-fes.html">Về Lễ Hội</a>
-        </div>
-        <div class="menu">
-            <a href="#">Bài viết</a>
-        </div>
-        <div class="menu" style="max-width: 20% !important;">
-            <a href="shopping.html">Vật phẩm lưu niệm</a>
-        </div>
-        <div class="col-3 icon">
-            <img src="images/find.png" style="width: 20px;height: 20px;" class="img-fluid" hspace="20px">
-            <img src="images/giohang.png" style="width: 20px;height: 20px;" class="img-fluid" hspace="20px">
-            <a href="login.html"><img src="images/info.png" style="width: 20px;height: 20px;" class="img-fluid"
-                    hspace="20px"></a>
+
+        <div class="row" style="width: 100%;height: 20px;margin: auto;">
+            <div style="width: 80%">
+            </div>
+            <div style="width: 20%">
+                <form action="" class="search-box">
+                    <input type="text" class="form-control form-control-sm search-input" placeholder="Tìm kiếm..." />
+                </form>
+            </div>
         </div>
     </div>
 
@@ -133,12 +162,17 @@
                         <h1>Nguồn gốc</h1>
                         <hr />
                         <p style="line-height: 250%;">
-                            Lễ hội mừng lúa mới – là một phong tục lâu đời của đồng bào các dân tộc sống trên dải Trường Sơn. 
-                            Giống như người Kinh ăn tết Nguyên đán, ở các dân tộc vùng Tây Nguyên sau mùa thu hoạch, thời gian 
-                            tổ chức mừng lúa mới thường vào dịp cuối năm thời gian khá dài từ tháng 11 dương lịch năm trước đến 
-                            tháng Giêng năm sau, đồng bào các dân tộc ở Tây Nguyên lại tổ chức lễ mừng lúa mới. Có nơi cúng ngay 
-                            khi bắt đầu thu hoạch gùi lúa đầu tiên, có nơi thu hoạch xong khu vực gieo trồng lúa thì cúng, có nơi 
-                            khi đã xong hẳn mùa màng mới tổ chức lễ.  
+                            Lễ hội mừng lúa mới – là một phong tục lâu đời của đồng bào các dân tộc sống trên dải Trường
+                            Sơn.
+                            Giống như người Kinh ăn tết Nguyên đán, ở các dân tộc vùng Tây Nguyên sau mùa thu hoạch,
+                            thời gian
+                            tổ chức mừng lúa mới thường vào dịp cuối năm thời gian khá dài từ tháng 11 dương lịch năm
+                            trước đến
+                            tháng Giêng năm sau, đồng bào các dân tộc ở Tây Nguyên lại tổ chức lễ mừng lúa mới. Có nơi
+                            cúng ngay
+                            khi bắt đầu thu hoạch gùi lúa đầu tiên, có nơi thu hoạch xong khu vực gieo trồng lúa thì
+                            cúng, có nơi
+                            khi đã xong hẳn mùa màng mới tổ chức lễ.
                         </p>
                     </div>
                 </div>
@@ -152,17 +186,20 @@
                     <h1>Nội dung</h1>
                     <hr />
                     <p>
-                        Trong quá trình thu hoạch, già làng sẽ quyết định chọn một đám lúa tốt nhất dành để lại và 
-                        chọn “ngày lành tháng tốt” tổ chức lễ cúng thần la Pôm (thần lúa, thần nông nghiệp) ngay tại 
-                        chân ruộng. Vào ngày này bà con trong làng đều có mặt, ai cũng có nghĩa vụ đóng góp một phần 
-                        thức ăn của mình phục vụ buổi lễ như một vài chén rượu cần hoặc một con gà, một miếng thịt,….lễ 
-                        cúng lúa mới diễn ra trong khoảng một giờ đồng hồ.<br/>
-                        Sau khi lễ hội chung của làng kết thúc, bà con lại tiếp tục lễ cúng mừng lúa mới theo từng nhà, 
-                        theo một trật tự đã thỏa thuận trước. Việc tổ chức lễ lớn hay nhỏ tùy thuộc vào khả năng thu hoạch 
-                        được nhiều hay ít của từng gia đình theo đó mà thời gian có thể kéo dài một hay nhiều ngày. Đây cũng 
-                        là dịp để gia chủ mời bà con, họ hàng, bạn bè các buôn lân cận cùng đến vui chơi, ăn uống, múa hát, 
+                        Trong quá trình thu hoạch, già làng sẽ quyết định chọn một đám lúa tốt nhất dành để lại và
+                        chọn “ngày lành tháng tốt” tổ chức lễ cúng thần la Pôm (thần lúa, thần nông nghiệp) ngay tại
+                        chân ruộng. Vào ngày này bà con trong làng đều có mặt, ai cũng có nghĩa vụ đóng góp một phần
+                        thức ăn của mình phục vụ buổi lễ như một vài chén rượu cần hoặc một con gà, một miếng thịt,….lễ
+                        cúng lúa mới diễn ra trong khoảng một giờ đồng hồ.<br />
+                        Sau khi lễ hội chung của làng kết thúc, bà con lại tiếp tục lễ cúng mừng lúa mới theo từng nhà,
+                        theo một trật tự đã thỏa thuận trước. Việc tổ chức lễ lớn hay nhỏ tùy thuộc vào khả năng thu
+                        hoạch
+                        được nhiều hay ít của từng gia đình theo đó mà thời gian có thể kéo dài một hay nhiều ngày. Đây
+                        cũng
+                        là dịp để gia chủ mời bà con, họ hàng, bạn bè các buôn lân cận cùng đến vui chơi, ăn uống, múa
+                        hát,
                         nhà nào có đông khách coi như là niềm vinh dự.
-      
+
                     </p>
                 </div>
                 <div style="width: 30%;">
@@ -180,10 +217,10 @@
                     <h1>Ý nghĩa</h1>
                     <hr style="width: 15%;" />
                     <p>
-                        Đây là bản sắc văn hóa độc đáo và cũng là một trong những lễ hội lớn hàng năm của dân 
-                        tộc Tây Nguyên với có ý nghĩa tôn vinh hạt thóc của Giàng ban cho dân làng và tập tục 
-                        cúng Giàng, cúng các vị thần linh: cúng trời đất, các thần sông suối, thần núi, thần mưa, 
-                        thần sấm, thần mùa màng để cầu cho mưa thuận gió hòa, là sự giao hòa giữa con người với con 
+                        Đây là bản sắc văn hóa độc đáo và cũng là một trong những lễ hội lớn hàng năm của dân
+                        tộc Tây Nguyên với có ý nghĩa tôn vinh hạt thóc của Giàng ban cho dân làng và tập tục
+                        cúng Giàng, cúng các vị thần linh: cúng trời đất, các thần sông suối, thần núi, thần mưa,
+                        thần sấm, thần mùa màng để cầu cho mưa thuận gió hòa, là sự giao hòa giữa con người với con
                         người, giữa con người với thiên nhiên và cảnh vật.
                     </p>
                 </div>
