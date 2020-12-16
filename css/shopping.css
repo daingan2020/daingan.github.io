@@ -34,7 +34,7 @@ html, body {
 }
 
 .category{
-    border: 1px solid white;
+    border: 1px solid #D4CDC4;
     width: 75%;
     height: 250px;
     padding: 20px;
@@ -43,7 +43,7 @@ html, body {
 
 .list-category{
     line-height:250%;
-    color: white;
+    color: #D4CDC4;
 }
 
 .best-seller{
@@ -54,7 +54,7 @@ html, body {
 
 .list-info{
     line-height:140%;
-    color: white;
+    color: #D4CDC4;
     list-style-type: none;
     margin: 0;
     padding: 4px 0 0 0;
@@ -68,7 +68,7 @@ html, body {
 }
 
 .product > img {
-    border: 1px solid white;
+    border: 1px solid #D4CDC4;
 }
 
 .btn{
@@ -92,5 +92,5 @@ html, body {
 }
 
 .page-link.active {
-    border-bottom: 1px solid white !important;
+    border-bottom: 1px solid #D4CDC4 !important;
 }

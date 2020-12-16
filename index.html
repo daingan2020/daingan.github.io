@@ -27,7 +27,7 @@
         crossorigin="anonymous"></script>
     <style>
         .menu>a {
-            color: white;
+            color: #D4CDC4;
             padding: 8px;
             text-decoration: none;
             font-size: 20px;
@@ -36,7 +36,7 @@
         }
 
         .menu>a:hover {
-            color: white;
+            color: #D4CDC4;
             text-decoration: none;
             font-size: 22px;
         }
@@ -98,6 +98,15 @@
             e.preventDefault();
         });
     });
+
+    
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+  }
+  
+  function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+  }
 </script>
 
 <body>
@@ -150,6 +159,22 @@
                 </div>
         </div>
 
+        <div class="menu-nav">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </div>
+
+        <div id="myNav" class="overlay-nav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-nav-content">
+                    <a href="index.html">Trang chủ</a>
+                <a href="introduction.html">Giới thiệu</a>
+                <a href="about-fes.html">Về Lễ Hội</a>
+                <a href="story.html">Bài viết</a>
+                <a href="shopping.html">Vật phẩm lưu niệm</a>
+                <a href="shopping-cart.html">Giỏ Hàng</a>
+                <a href="login.html">Đăng nhập</a>
+            </div>
+        </div>
         <footer>
             <div class="right-bottom">
                 <img src="images/line.png">
@@ -159,7 +184,7 @@
             </div>
         </footer>
         <div id="fullpage">
-            <div class="section " id="section0">
+            <div class="section " >
                 <div class="row cover">
                     <div class="col-3" style="background-color: #9B4E23;height: 100%;"></div>
                     <div class="col-6 bg"></div>
@@ -215,7 +240,7 @@
                 </div>
 
             </div>
-            <div class="section " id="section1" style="position: relative;">
+            <div class="section " style="position: relative;">
                 <div class="row cover">
                     <div class="col-3" style="background-color: #9B4E23;height: 100%;"></div>
                     <div class="col-6 bg"></div>
@@ -275,10 +300,8 @@
 <script src="js/fullpage.js"></script>
 <script>
     var myFullpage = new fullpage('#fullpage', {
-        navigation: true,
-        navigationPosition: 'right',
-        navigationTooltips: ['Giới thiệu', 'Nguồn gốc', 'Nội dung', 'Ý Nghĩa', 'Video', 'Các video khác'],
-        scrollOverflow: true
+        // navigation: true,
+        // scrollOverflow: true
     });
 </script>
 

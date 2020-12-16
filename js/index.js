@@ -25,10 +25,10 @@ function scrollFunction20() {
         document.getElementById("white").style.display = "block";
         document.getElementById("blacklink").style.display = "none";
         document.getElementById("whitelink").style.display = "block";
-        document.getElementById("t1").style.color = "white";
-        document.getElementById("t2").style.color = "white";
-        document.getElementById("t3").style.color = "white";
-        document.getElementById("t4").style.color = "white";
+        document.getElementById("t1").style.color = "#D4CDC4";
+        document.getElementById("t2").style.color = "#D4CDC4";
+        document.getElementById("t3").style.color = "#D4CDC4";
+        document.getElementById("t4").style.color = "#D4CDC4";
         document.getElementById("icon-white").style.display = "flex";
         document.getElementById("icon-black").style.display = "none";
         document.getElementById("logo").style.padding = "15px 0px 0px 0px"
@@ -38,3 +38,11 @@ function scrollFunction20() {
         document.getElementById("d4").style.paddingTop = "10px";
     }
 }
+
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+  }
+  
+  function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+  }

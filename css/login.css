@@ -98,18 +98,18 @@ html, body {
 }
 .btn-login{
     background-color: #9B4E23!important;
-    color: white !important;
+    color: #D4CDC4 !important;
     /* width: 100px;  */
 }
 .btn-f{
     background-color: #3B62A3 !important;
-    color: white !important;
+    color: #D4CDC4 !important;
     width: 100px;
 }
 
 .btn-g{
     background-color: #D54D45 !important;
-    color: white !important;
+    color: #D4CDC4 !important;
     width: 100px;
 }
 

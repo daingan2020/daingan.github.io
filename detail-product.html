@@ -15,7 +15,7 @@
     <script src="js/index.js"></script>
     <style>
         .menu>a {
-            color: white;
+            color: #D4CDC4;
             padding: 8px;
             text-decoration: none;
             font-size: 20px;
@@ -24,7 +24,7 @@
         }
 
         .menu>a:hover {
-            color: white;
+            color: #D4CDC4;
             text-decoration: none;
             font-size: 22px;
         }
@@ -63,6 +63,14 @@
             e.preventDefault();
         });
     });
+
+    function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+    }
+
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+    }
 </script>
 
 <body>
@@ -110,17 +118,33 @@
                     </div>
                 </div>
                 <div class="row" style="width: 100%;height: 20px;margin: auto;">
-                        <div style="width: 80%">
-                        </div>
-                        <div style="width: 20%">
-                            <form action="" class="search-box">
-                                <input type="text" class="form-control form-control-sm search-input"
-                                    placeholder="Tìm kiếm..." />
-                            </form>
-                        </div>
+                    <div style="width: 80%">
                     </div>
+                    <div style="width: 20%">
+                        <form action="" class="search-box">
+                            <input type="text" class="form-control form-control-sm search-input"
+                                placeholder="Tìm kiếm..." />
+                        </form>
+                    </div>
+                </div>
             </div>
 
+            <div class="menu-nav">
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            </div>
+
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="index.html">Trang chủ</a>
+                    <a href="introduction.html">Giới thiệu</a>
+                    <a href="about-fes.html">Về Lễ Hội</a>
+                    <a href="story.html">Bài viết</a>
+                    <a href="shopping.html">Vật phẩm lưu niệm</a>
+                    <a href="shopping-cart.html">Giỏ Hàng</a>
+                    <a href="login.html">Đăng nhập</a>
+                </div>
+            </div>
             <footer>
                 <div class="right-bottom">
                     <img src="images/line.png">
@@ -160,24 +184,31 @@
 
                         <div class="row" style="margin: auto !important;">
                             <div style="width: 30%; margin: auto;">
-                                <span class="size">Kích thước :</span>
+                                <span class="size">Kích thước </span>
                             </div>
                             <div style="width: 70%;">
-                                <button type="button" class="btn btn-sm">S</button>
-                                <button type="button" class="btn btn-sm">M</button>
-                                <button type="button" class="btn btn-sm">XS</button>
+                                <button type="button" style="width: 90px;" class="btn btn-sm">ONE SIZE</button>
                             </div>
                         </div>
                         <div class="row" style="margin: auto !important;">
                             <div style="width: 30%; margin: auto;">
+                                <span class="size">Số lượng </span>
+                            </div>
+                            <div style="width: 70%; margin: auto;">
                                 <span class="quality">
                                     -
                                     <u style="padding: 20px;"> 1 </u>
                                     +
                                 </span>
                             </div>
-                            <div style="width: 70%;">
-                                <button type="button" class="btn btn-sm order">ĐẶT HÀNG</button>
+                        </div>
+                        <div class="row" style="margin: auto !important;">
+                            <div style="width: 40%;">
+                                <button type="button" style="font-size: 15px !important;" class="btn btn-sm order">THÊM VÀO GIỎ</button>
+                            </div>
+                            <div style="width: 5%;"></div>
+                            <div style="width: 40%;">
+                                <button type="button" style="font-size: 15px !important;" class="btn btn-sm order">MUA NGAY</button>
                             </div>
                         </div>
                     </div>

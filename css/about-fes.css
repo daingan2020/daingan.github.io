@@ -26,8 +26,9 @@ html, body {
 }
 
 .par > p{
-    color: white;
+    color: #D4CDC4;
     font-size: 18px;
+    line-height: 2;
 }
 
 .list{
@@ -41,21 +42,21 @@ html, body {
 }
 
 .list > span{
-    color: white;
+    color: #D4CDC4;
 }
 
 .fes{
-    color: white;
+    color: #D4CDC4;
     text-decoration: none;
 }
 .fes:hover{
     text-decoration: none;
-    color: white;
+    color: #D4CDC4;
 }
 
 .fes:visited{
     text-decoration: none;
-    color: white;
+    color: #D4CDC4;
 }
 .story{
     width: 90%;

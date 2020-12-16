@@ -71,6 +71,7 @@ html, body {
 .description{
     color: #D4CDC4;
     font-size: 20px;
+    line-height: 1;
 }
 
 .size{
@@ -80,7 +81,7 @@ html, body {
 }
 
 .btn{
-    background-color: #CFB899 !important;
+    background-color: #D4CDC4 !important;
     color: #9B4E23 !important;
     font-weight: 630 !important;
     margin-top: 10px;

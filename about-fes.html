@@ -15,7 +15,7 @@
     <script src="js/index.js"></script>
     <style>
         .menu>a {
-            color: white;
+            color: #D4CDC4;
             padding: 8px;
             text-decoration: none;
             font-size: 20px;
@@ -24,7 +24,7 @@
         }
 
         .menu>a:hover {
-            color: white;
+            color: #D4CDC4;
             text-decoration: none;
             font-size: 22px;
         }
@@ -65,6 +65,14 @@
             e.preventDefault();
         });
     });
+
+    function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+  }
+  
+  function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+  }
 </script>
 
 <body>
@@ -118,7 +126,22 @@
             </div>
         </div>
 
+        <div class="menu-nav">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </div>
 
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">Trang chủ</a>
+                <a href="introduction.html">Giới thiệu</a>
+                <a href="about-fes.html">Về Lễ Hội</a>
+                <a href="story.html">Bài viết</a>
+                <a href="shopping.html">Vật phẩm lưu niệm</a>
+                <a href="shopping-cart.html">Giỏ Hàng</a>
+                <a href="login.html">Đăng nhập</a>
+            </div>
+        </div>
 
         <footer>
             <div class="right-bottom">
@@ -134,7 +157,7 @@
             <div class="gen-intro">
                 <h2 class="title">Văn hoá lễ hội Tây Nguyên là gì ?</h2>
             </div>
-            <br /><br />
+            <br />
             <div class="row text1">
                 <div style="width: 20%;"></div>
                 <div class="par" style="width: 60%;">
@@ -145,7 +168,7 @@
                 </div>
                 <div style="width: 20%;"></div>
             </div>
-            <br /><br />
+            <br />
             <div class="row text1">
                 <div style="width: 20%;"></div>
                 <div class="par" style="width: 60%;">
@@ -159,30 +182,30 @@
             </div>
             <br /><br />
             <div class="gen-intro">
-                <h2 class="title">Phân loại lễ hội</h2>
+                <h2 class="title">PHÂN LOẠI LỄ HỘI</h2>
             </div>
             <br /><br />
             <div class="row text1">
                 <div style="width: 10%;"></div>
                 <div style="width: 80%;">
                     <div class="list" style="width: 20%;">
-                        <img src="images/Mask Group 36.png" alt="" />
-                        <span><a class="fes" href="fes-congchieng.html">Lễ hội cồng chiêng</a></span>
+                        <img style="margin-bottom: 10px;" src="images/Mask Group 36.png" alt="" />
+                        <span><a class="fes" href="fes-congchieng.html">LỄ HỘI CỒNG CHIÊNG</a></span>
                     </div>
                     <div class="list" style="width: 5%;"></div>
                     <div class="list" style="width: 20%;">
-                        <img src="images/Mask Group 35.png" alt="" />
-                        <span><a class="fes" href="fes-duavoi.html">Lễ hội đua voi</a></span>
+                        <img style="margin-bottom: 10px;" src="images/Mask Group 35.png" alt="" />
+                        <span><a class="fes" href="fes-duavoi.html">LỄ HỘI ĐUA VOI</a></span>
                     </div>
                     <div class="list" style="width: 5%;"></div>
                     <div class="list" style="width: 20%;">
-                        <img src="images/Mask Group 38.png" alt="" />
-                        <span><a class="fes" href="fes-mungluamoi.html">Lễ hội mừng lúa mới</a></span>
+                        <img style="margin-bottom: 10px;" src="images/Mask Group 38.png" alt="" />
+                        <span><a class="fes" href="fes-mungluamoi.html">LỄ HỘI MỪNG LÚC MỚI</a></span>
                     </div>
                     <div class="list" style="width: 5%;"></div>
                     <div class="list" style="width: 20%;">
-                        <img src="images/Mask Group 37.png" alt="" />
-                        <span><a class="fes" href="fes-duathuyen.html">Lễ hội đua thuyền</a></span>
+                        <img style="margin-bottom: 10px;" src="images/Mask Group 37.png" alt="" />
+                        <span><a class="fes" href="fes-duathuyen.html">LỄ HỘI ĐUA THUYỀN</a></span>
                     </div>
                 </div>
                 <div style="width: 10%;"></div>
@@ -199,13 +222,13 @@
                 <div style="width: 45%;margin: auto;">
                     <h2 style="color: #C1AC90;">Để du lịch văn hoá Tây Nguyên phát triển bền vững</h2>
                     <br />
-                    <p style="color: white;line-height: 2;">
+                    <p style="color: #D4CDC4;line-height: 2;font-weight: 200;">
                         Bên cạnh đó,các lễ hội văn hoá Tây Nguyên cũng là môt trong những nét nổi bật nơi đây
                         .Những lễ hội là sự giao thoa mạnh mẽ, sản sinh ra những giá trị về vật chất lẫn tinh thần vô
                         cùng độc đáo được người dân lưu truyền qua bao thế hệ
                     </p>
-                    <div>
-                        <p>Chi tiết</p>
+                    <div style="text-align: right;">
+                        <p style="color: #D4CDC4;line-height: 2;font-weight: 200;">Chi tiết > </p>
                     </div>
                 </div>
                 <div style="width: 5%;"></div>

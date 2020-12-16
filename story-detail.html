@@ -15,7 +15,7 @@
         crossorigin="anonymous"></script>
     <style>
         .menu>a {
-            color: white;
+            color: #D4CDC4;
             padding: 8px;
             text-decoration: none;
             font-size: 20px;
@@ -24,7 +24,7 @@
         }
 
         .menu>a:hover {
-            color: white;
+            color: #D4CDC4;
             text-decoration: none;
             font-size: 22px;
         }
@@ -57,6 +57,14 @@
             e.preventDefault();
         });
     });
+
+    function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+  }
+  
+  function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+  }
 </script>
 
 <body>
@@ -107,6 +115,23 @@
                             placeholder="Tìm kiếm..." />
                     </form>
                 </div>
+            </div>
+        </div>
+
+        <div class="menu-nav">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </div>
+
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                    <a href="index.html">Trang chủ</a>
+                <a href="introduction.html">Giới thiệu</a>
+                <a href="about-fes.html">Về Lễ Hội</a>
+                <a href="story.html">Bài viết</a>
+                <a href="shopping.html">Vật phẩm lưu niệm</a>
+                <a href="shopping-cart.html">Giỏ Hàng</a>
+                <a href="login.html">Đăng nhập</a>
             </div>
         </div>
         <footer>
