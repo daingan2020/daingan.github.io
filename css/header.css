@@ -183,8 +183,10 @@ footer{
   }
 
   .menu-nav{
-    float: right;
-    padding: 50px;
+    position: fixed;
+    right: 50px;
+    top: 50px;
+    z-index: 10;
     display: none;
     color: #E3D7CC;
   }
